@@ -199,3 +199,8 @@ body {
     width: 25%;
     font-weight: bold;
 }
+.ref-table td a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
