@@ -1,330 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHIM SEAKHENG - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        /* ផ្ទាំងក្រដាស CV ទាំងមូល */
-        .cv-container {
-            width: 800px;
-            background-color: #ffffff;
-            display: flex;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        /* ------------------ ផ្នែកខាងឆ្វេង (Left Sidebar - Dark Blue) ------------------ */
-        .left-sidebar {
-            width: 35%;
-            background-color: #1e3a60;
-            color: #ffffff;
-            padding: 25px 20px;
-        }
-
-        .profile-img-container {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .profile-img-container img {
-            width: 130px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 3px solid #ffffff;
-        }
-
-        .sidebar-title {
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-            padding-bottom: 5px;
-            margin-top: 20px;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-        }
-
-        .sidebar-list {
-            list-style: none;
-            font-size: 12px;
-            line-height: 1.8;
-        }
-
-        .sidebar-list li {
-            position: relative;
-            padding-left: 15px;
-            margin-bottom: 4px;
-        }
-
-        .sidebar-list li::before {
-            content: "➢";
-            position: absolute;
-            left: 0;
-            font-size: 10px;
-        }
-
-        .info-table {
-            width: 100%;
-            font-size: 12px;
-            border-collapse: collapse;
-        }
-
-        .info-table td {
-            padding: 3px 0;
-            vertical-align: top;
-        }
-
-        .info-table td:first-child {
-            width: 45%;
-        }
-.sidebar-list a {
-    color: #ffffff;        
-    text-decoration: none;      
-    font-weight: bold;
-}
-
-.sidebar-list a:hover {
-    text-decoration: underline; 
-    color: #0088cc;           
-}
-
-        
-        .right-content {
-            width: 65%;
-            padding: 30px 25px;
-            color: #333333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .header h1 {
-            font-size: 28px;
-            color: #1e3a60;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .header p {
-            font-size: 14px;
-            font-weight: bold;
-            color: #555555;
-            margin-top: 5px;
-        }
-
-        .section-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #1e3a60;
-            text-transform: uppercase;
-            border-bottom: 2px dashed #1e3a60;
-            padding-bottom: 4px;
-            margin-top: 18px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .section-title::before {
-            content: "✖";
-            font-size: 12px;
-            background-color: #1e3a60;
-            color: white;
-            padding: 2px 5px;
-            border-radius: 2px;
-        }
-
-        .summary-text {
-            font-size: 12px;
-            line-height: 1.6;
-            text-align: justify;
-            color: #444444;
-        }
-
-        .content-list {
-            list-style: none;
-            font-size: 12px;
-            line-height: 1.8;
-        }
-
-        .content-list li {
-            position: relative;
-            padding-left: 18px;
-            margin-bottom: 4px;
-        }
-
-        .content-list li::before {
-            content: "❖";
-            position: absolute;
-            left: 0;
-            color: #1e3a60;
-            font-size: 11px;
-        }
-
-        .ref-table {
-            width: 100%;
-            font-size: 12px;
-            line-height: 1.8;
-        }
-
-        .ref-table td:first-child {
-            width: 25%;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="cv-container">
-        
-        <!-- ================= ផ្នែកខាងឆ្វេង (Sidebar) ================= -->
-        <div class="left-sidebar">
-            
-            <!-- រូបថត -->
-            <div class="profile-img-container">
-                <!-- ជំនួសរូបថតរបស់អ្នកត្រង់នេះ -->
-                <img src="934BF001-94E3-43A3-858B-069BA55747CD.JPG" alt="Profile Photo">
-            </div>
-
-            <!-- CONTACT -->
-            <div class="sidebar-title">CONTACT</div>
-            <ul class="sidebar-list">
-                <li>Tel : 097 709 5369</li>
-                <li>Telegram : <a href="https://t.me/chimseakheng" target="_blank">097 709 5369</a></li>
-                <li>Address : Sangkat Teuk Thla, Khan Sen Sok, Phnom Penh</li>
-            </ul>
-
-            <!-- INFORMATION -->
-            <div class="sidebar-title">INFORMATION</div>
-            <table class="info-table">
-                <tr>
-                    <td>Date of Birth</td>
-                    <td>: 08-June-2008</td>
-                </tr>
-                <tr>
-                    <td>Sex</td>
-                    <td>: Male</td>
-                </tr>
-                <tr>
-                    <td>Marital Status</td>
-                    <td>: Single</td>
-                </tr>
-                <tr>
-                    <td>Nationality</td>
-                    <td>: Khmer</td>
-                </tr>
-                <tr>
-                    <td>Place of Birth</td>
-                    <td>: Kampong Cham</td>
-                </tr>
-                <tr>
-                    <td>Health</td>
-                    <td>: Good</td>
-                </tr>
-                <tr>
-                    <td>Height</td>
-                    <td>: 170cm</td>
-                </tr>
-            </table>
-
-            <!-- INTEREST -->
-            <div class="sidebar-title">INTEREST</div>
-            <ul class="sidebar-list">
-                <li>Reading,</li>
+    <!-- Link ទៅកាន់ File style.css -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+    <body>
+        <div class="cv-container">
+            <div class="left-sidebar">
+                <div class="profile-img-container">
+                    <img src="profile cv.JPG" alt="Profile Photo">
+        </div>
+        <div class="sidebar-title">CONTACT</div>
+        <ul class="sidebar-list">
+            <li>Tel : 097 709 5369</li>
+            <li>telegram : <a href="https://t.me/chimseakheng" target="_blank">097 709 5369</a></li>
+            <li>Address : <a href="https://maps.apple.com/?ll=11.575338,104.891802&q=My%20Location&t=h" target="_blank">Sangkat Teuk Thla, Khan Sen Sok, Phnom Penh</a></li>
+        </ul>
+        <div class="sidebar-title">INFORMATIONAL</div>
+        <table  class="info-table">
+            <tr>
+                <td>Date of Birth</td>
+                <td>: 08/june/2009</td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>: Male</td>
+            </tr>
+            <tr>
+                <td>Marital Status</td>
+                <td>: Single</td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td>: Khmer</td>
+            </tr>
+            <tr>
+                <td>Place of birth</td>
+                <td>: KamPong Cham</td>
+            </tr>
+            <tr>
+                <td>Health</td>
+                <td>: Good</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>: 170 cm</td>
+            </tr>
+        </table>
+        <div class="sidebar-title">INTEREST</div>
+        <ul class="sidebar-list">
+            <li>Reading,</li>
                 <li>Researching,</li>
                 <li>Watching movies,</li>
                 <li>Listening to music,</li>
                 <li>Travelling, Meeting with Friend and Team Work for get new Experience</li>
-            </ul>
-
+        </ul>
         </div>
-
-        <!-- ================= ផ្នែកខាងស្តាំ (Main Content) ================= -->
         <div class="right-content">
-            
-            <!-- ចំណងជើងឈ្មោះ -->
             <div class="header">
                 <h1>CHIM SEAKHENG</h1>
                 <p>Position : Barista</p>
-            </div>
-
-            <!-- PROFESSIONAL SUMMARY -->
-            <div class="section-title">PROFESSIONAL SUMMARY</div>
-            <p class="summary-text">
-                An ambitious and goal-oriented high school graduate from Hun Sen Keo Seima High School (2026) with a complete 12-year academic background spanning primary through upper secondary education. Demonstrates strong work ethic, high reliability, and effective communication skills. Eager to leverage foundational organizational abilities and a fast-learning mindset toward university advancement or entry-level career opportunities.
-            </p>
-
-            <!-- EDUCATION BACKGROUND -->
-            <div class="section-title">EDUCATION BACKGROUND</div>
-            <ul class="content-list">
+        </div>
+        <div class="section-title">PROFESTIONAL SUMMARY </div>
+        <p class="summary-text">
+            An ambitious and goal-oriented high school graduate from Hun Sen Keo Seima High School (2026) with a complete 12-year academic background spanning primary through upper secondary education. Demonstrates strong work ethic, high reliability, and effective communication skills. Eager to leverage foundational organizational abilities and a fast-learning mindset toward university advancement or entry-level career opportunities.
+        </p>
+        <div class="section-title">EDUCATIOM BACKGROUND</div>
+        <ul class="content-list">
                 <li><b>From 2023 to 2026 :</b> Grade 12<sup>th</sup> At Hun Sen Keo Seima High School</li>
                 <li><b>From 2020 to 2023 :</b> Grade 9<sup>th</sup> At Kronhoung Senchey Secondary School</li>
                 <li><b>From 2014 to 2020 :</b> Grade 6<sup>th</sup> At Kronhoung Senchey Primary School</li>
             </ul>
-
-            <!-- TRAINING COURSE -->
-            <div class="section-title">TRAINING COURSE</div>
+            <div class="section-title">TRAINNING COURSE</div>
             <ul class="content-list">
-                <li>Computer</li>
+                <li>Computor</li>
                 <li>Communication</li>
                 <li>Time Management</li>
                 <li>Critical Thinking</li>
             </ul>
-
-            <!-- WORK EXPERIENCE -->
-            <div class="section-title">WORK EXPERIENCE</div>
+            <div class="section-title">WORK EXPERRIENCE</div>
             <p class="summary-text">
                 <b>Dear Sir and Madam</b><br>
                 As a recent high school graduate, I do not possess any formal work experience yet. I would be grateful if you could offer me an employment opportunity to allow me to develop my skills and gain essential professional knowledge. Thank you.
             </p>
-
-            <!-- LANGUAGES -->
             <div class="section-title">LANGUAGES</div>
             <ul class="content-list">
                 <li>Khmer : Good</li>
-                <li>English : Medium</li>
+                <li>English : medium</li>
             </ul>
-
-            <!-- REFERENCE -->
-            <div class="section-title">REFERENCE</div>
+            <div class="section-title">REFERENCES</div>
             <table class="ref-table">
                 <tr>
-                    <td>❖ Name</td>
-                    <td>: Nak Nisay</td>
+                    <td>Name</td>
+                    <td>Nak Nisay</td>
                 </tr>
                 <tr>
-                    <td>❖ Job</td>
-                    <td>: Branch Manager</td>
+                    <td>Job</td>
+                    <td>Branch Manager</td>
                 </tr>
                 <tr>
-                    <td>❖ Contact</td>
-                    <td>: @Nak_Nisay</td>
+                    <td>Contact</td>
+                    <td><a href="https://t.me/SMOK_KHMER" target="_blank">@Nak Nisay</a></td>
                 </tr>
+
             </table>
-
-        </div>
-
-    </div>
-
-</body>
+    </body>
 </html>

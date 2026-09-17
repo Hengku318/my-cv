@@ -1,0 +1,201 @@
+/* Reset Basic Elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ផ្ទាំង CV ទាំងមូល */
+.cv-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= ផ្នែកខាងឆ្វេង (Left Sidebar) ================= */
+.left-sidebar {
+    width: 38%;
+    background-color: #233b66; /* ពណ៌ខៀវចាស់ដូចក្នុងរូប */
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+/* រូបថតមានស៊ុមពណ៌សជុំវិញ */
+.profile-img-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-img-container img {
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #ffffff; /* ស៊ុមសជុំវិញរូប */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ចំណងជើងផ្នែកខាងឆ្វេង មានបន្ទាត់សស្តើងពីក្រោម */
+.sidebar-title {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* បន្ទាត់ស្តើងក្រោមចំណងជើង */
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* List ព័ត៌មានទំនាក់ទំនង និង Interest */
+.sidebar-list {
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.sidebar-list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    word-break: break-word;
+}
+
+.sidebar-list li::before {
+    content: "➢";
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+/* Link Telegram ពណ៌ស */
+.sidebar-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-list a:hover {
+    text-decoration: underline;
+}
+
+/* តារាង Information */
+.info-table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.info-table td {
+    padding: 4px 0;
+    vertical-align: top;
+}
+
+.info-table td:first-child {
+    width: 48%;
+    color: #e0e0e0;
+}
+
+/* ================= ផ្នែកខាងស្តាំ (Right Content) ================= */
+.right-content {
+    width: 62%;
+    padding: 30px 25px;
+    color: #222222;
+}
+
+/* Header ឈ្មោះ និង ជំនាញ */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #233b66;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #444444;
+    margin-top: 4px;
+}
+
+/* ចំណងជើងផ្នែកខាងស្តាំ មាន icon ប្រអប់ខ្វែង និងបន្ទាត់ដាច់ៗ */
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #233b66;
+    text-transform: uppercase;
+    border-bottom: 1.5px dashed #233b66; /* បន្ទាត់ដាច់ៗ */
+    padding-bottom: 4px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title::before {
+    content: "✖";
+    font-size: 10px;
+    background-color: #233b66;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* អត្ថបទរៀបរាប់ */
+.summary-text {
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333333;
+}
+
+/* List ផ្នែកខាងស្តាំ (Education, Training, Languages) */
+.content-list {
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.content-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 5px;
+}
+
+.content-list li::before {
+    content: "❖";
+    position: absolute;
+    left: 0;
+    color: #233b66;
+    font-size: 10px;
+}
+
+/* តារាង Reference */
+.ref-table {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.ref-table td:first-child {
+    width: 25%;
+    font-weight: bold;
+}
